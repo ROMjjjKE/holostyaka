@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Доставка и навынос: «У Холостяка», Минск</title>
+<meta name="description" content="Доставка через Яндекс.Еду и Delivery-club, навынос и кофе с собой. Предзаказ по телефону +375 (29) 353-13-90.">
+<meta property="og:title" content="Доставка и навынос: «У Холостяка», Минск">
+<meta property="og:description" content="Доставка через Яндекс.Еду и Delivery-club, навынос и кофе с собой. Предзаказ по телефону +375 (29) 353-13-90.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#17100C">
+<style>
+:root{--wine:#17100C;--wine2:#221812;--wine3:#2E2017;--cream:#F4E9D7;--cream2:#EADCC6;--brass:#DDA04C;--brass2:#F1C67E;
+--wood:#8C5B34;--wood2:#B07A45;--brick:#A5452B;--green:#7E8F62;
+--ink:#15100C;--muted:#7A6459;--line:rgba(221,160,76,.3);
+--pad:24px;--max:1320px;--serif:'Bodoni Moda',Georgia,serif;--body:'Manrope',system-ui,sans-serif;--mono:'DM Mono',ui-monospace,monospace}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--wine);color:var(--cream);font:16px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+h1,h2,h3{margin:0;font-family:var(--serif);font-weight:700;line-height:1.02;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}[hidden]{display:none!important}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.header{position:sticky;top:0;z-index:40;background:rgba(23,16,12,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.header__in{display:flex;align-items:center;gap:20px;padding:12px 0}
+.logo{display:flex;align-items:center;gap:10px}
+.logo__mark{width:38px;height:38px;display:grid;place-items:center;border:1px solid var(--brass);color:var(--brass2);font:700 11px/1 var(--mono);letter-spacing:.08em}
+.logo__txt{display:flex;flex-direction:column;line-height:1.15}
+.logo__txt b{font:700 13px/1 var(--serif);letter-spacing:.16em}
+.logo__txt i{font:400 9px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-style:normal}
+.nav{display:flex;gap:18px;margin-left:auto;font-size:13px;letter-spacing:.01em}
+.nav a{padding:6px 0;border-bottom:1px solid transparent;color:rgba(246,236,220,.78)}
+.nav a:hover,.nav a.is-on{border-color:var(--brass);color:var(--cream)}
+.header__tel{font:400 12.5px/1 var(--mono);color:var(--brass2)}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 21px;font:600 11.5px/1 var(--body);letter-spacing:.13em;text-transform:uppercase;border:1px solid var(--brass);background:var(--brass);color:var(--ink);cursor:pointer;transition:.2s}
+.btn:hover{background:var(--brass2);border-color:var(--brass2)}
+.btn--ghost{background:transparent;color:var(--cream);border-color:rgba(246,236,220,.4)}
+.btn--ghost:hover{background:var(--cream);color:var(--ink);border-color:var(--cream)}
+.burger{display:none;width:42px;height:38px;border:1px solid var(--line);background:transparent;align-items:center;justify-content:center;flex-direction:column;gap:4px;cursor:pointer}
+.burger i{display:block;width:17px;height:1px;background:var(--cream)}
+.burger.is-close i:first-child{transform:rotate(45deg) translateY(3px)}
+.burger.is-close i:last-child{transform:rotate(-45deg) translateY(-3px)}
+.hero{position:relative;min-height:min(96svh,860px);display:flex;align-items:flex-end;overflow:hidden;background:#12060C}
+.hero__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(120% 80% at 68% 0%,rgba(221,160,76,.28),transparent 58%),linear-gradient(180deg,rgba(23,16,12,.62),rgba(23,16,12,.18) 40%,rgba(23,16,12,.86) 76%,var(--wine) 100%)}
+.hero__img{filter:saturate(1.06) contrast(1.02)}
+.hero__in{position:relative;z-index:2;width:100%;padding:clamp(36px,6vw,72px) 0 clamp(20px,3vw,28px)}
+.hero h1{font-size:clamp(2.6rem,7.4vw,6.2rem);line-height:.96}
+.hero h1 em{font-style:italic;color:var(--brass2)}
+.hero__lede{max-width:46ch;margin:18px 0 22px;color:rgba(246,236,220,.86);font-size:clamp(.95rem,1.3vw,1.06rem)}
+.hero__acts{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:clamp(20px,3vw,34px)}
+.hero__facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line)}
+.hero__facts div{padding:14px 14px 0 0}
+.hero__facts b{display:block;font:700 clamp(1rem,1.7vw,1.28rem)/1.15 var(--serif);letter-spacing:.01em;color:var(--cream)}
+.hero__facts span{font:400 9px/1.5 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+.drawer{position:fixed;inset:0;z-index:90;background:rgba(10,4,7,.8);display:none}
+.drawer[data-open]{display:block}
+.drawer__in{position:absolute;inset:0 0 0 auto;width:min(400px,92vw);background:var(--wine2);border-left:1px solid var(--line);padding:22px;overflow-y:auto}
+.drawer__top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.drawer__nav{display:grid;font:700 22px/1 var(--serif)}
+.drawer__nav a{padding:15px 0;border-bottom:1px solid var(--line)}
+.drawer__cta{width:100%;justify-content:center;margin-top:20px}
+.drawer__note{font-size:12.5px;color:rgba(246,236,220,.6);margin-top:12px}
+body.is-locked{overflow:hidden}
+.mbar{display:none}
+@media (max-width:1024px){
+.nav{display:none}.burger{display:flex}.header__tel{display:none}.header__in{gap:10px}
+.hero__facts{grid-template-columns:1fr 1fr}
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.v1.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="header"><div class="header__in wrap">
+<a class="logo" href="index.html"><span class="logo__mark">УХ</span><span class="logo__txt"><b>У ХОЛОСТЯКА</b><i>рестобар · Минск</i></span></a>
+<nav class="nav" aria-label="Основное меню"><a href="index.html">Главная</a><a href="menu.html">Меню</a><a href="events.html">Поводы</a><a href="about.html">О баре</a><a href="gallery.html">Фото</a><a href="delivery.html" class="is-on">Доставка</a><a href="kontakty.html">Контакты</a></nav>
+<a class="header__tel" href="tel:+375293531390">+375 (29) 353-13-90</a>
+<a class="btn btn--brass" href="https://wa.me/375293531390" target="_blank" rel="noopener">Забронировать</a>
+<button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="drawer"><i></i><i></i><i></i></button>
+</div></header>
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Меню" hidden>
+<div class="drawer__in">
+<div class="drawer__top">
+<a class="logo" href="index.html"><span class="logo__mark">УХ</span><span class="logo__txt"><b>У ХОЛОСТЯКА</b><i>рестобар</i></span></a>
+<button class="burger is-close" type="button" data-close aria-label="Закрыть меню"><i></i><i></i></button>
+</div>
+<nav class="drawer__nav"><a href="index.html">Главная</a><a href="menu.html">Меню</a><a href="events.html">Поводы</a><a href="about.html">О баре</a><a href="gallery.html">Фото</a><a href="delivery.html">Доставка</a><a href="kontakty.html">Контакты</a></nav>
+<a class="btn btn--brass drawer__cta" href="tel:+375293531390">Позвонить +375 (29) 353-13-90</a>
+<p class="drawer__note">Минск, просп. Независимости, 76. Каждый день с 11:00, в четверг, пятницу и субботу до 01:00.</p>
+</div></div>
+<main>
+<section class="phero"><img src="assets/img/dish4.jpg" alt="Блюдо для доставки" width="1024" height="683">
+<div class="phero__in"><div class="wrap"><div class="crumbs"><a href="index.html">Главная</a> / Доставка</div>
+<h1>Доставка<br><em>и навынос</em></h1><p>Сковородки, мачанка и стейки дома. Через Яндекс.Еду и Delivery-club, навынос и кофе с собой.</p></div></div></section>
+<section class="section"><div class="wrap">
+<div class="sec-head"><div><p class="eyebrow">как заказать</p><h2 class="h2">Три<br>способа</h2></div><p>Цены в доставке соответствуют меню доставки от 4 октября, в зале могут отличаться.</p></div>
+<div class="cards">
+<div class="card"><h3>Яндекс.Еда</h3><p>Заказ курьером по Минску. Меню и условия доставки видны в приложении при выборе заведения.</p></div>
+<div class="card"><h3>Delivery-club</h3><p>Второй сервис доставки. Удобно, если у вас там подписка или промокод.</p></div>
+<div class="card"><h3>Навынос</h3><p>Позвоните и предзакажите: соберём к вашему приходу. Кофе с собой тоже есть.</p></div>
+</div>
+<div class="two" style="margin-top:clamp(24px,3.4vw,44px)">
+<div class="prose">
+<h3>Что лучше едет</h3>
+<p>Сковородки, мачанка, язык в сметанном соусе, борщ и закуски. Стейки всё же вкуснее в зале: дома сложно повторить температуру подачи.</p>
+<h3>На компанию</h3>
+<p>Сет «Мини-гриль» на 570 грамм рассчитан на двоих или небольшую компанию, к нему добавьте закуски и гарниры. Ориентир по сумме можно собрать в смете вечера ниже.</p>
+<h3>Оплата</h3>
+<p>В зале принимаем карты, наличные и безналичную оплату, есть дисконтная система. В сервисах доставки оплата по их правилам.</p>
+<a class="btn" href="tel:+375293531390">Предзаказ по телефону</a>
+</div>
+<div class="card"><p class="eyebrow">предзаказ</p><h3 style="margin-bottom:12px">Соберём к приходу</h3>
+<form class="form" id="lead">
+<label>Имя<input type="text" id="lName" placeholder="Как к вам обращаться" required></label>
+<label>Телефон<input type="tel" id="lTel" placeholder="+375" required></label>
+<label>Что заказать<textarea id="lTask" placeholder="Мачанка с блинами, сет Мини-гриль, борщ"></textarea></label>
+<button class="btn" type="submit" style="justify-content:center">Отправить в WhatsApp</button>
+<p style="font-size:11px;color:rgba(246,236,220,.5);margin:0;line-height:1.5">Нажимая кнопку, вы соглашаетесь с <a href="politika.html" style="text-decoration:underline">политикой обработки данных</a>.</p>
+</form></div>
+</div>
+</div></section>
+
+<section class="section section--wine2" id="party"><div class="wrap">
+<div class="sec-head"><div><p class="eyebrow">смета вечера</p><h2 class="h2">Сколько стоит<br><em>посидеть</em></h2></div>
+<p>Соберите сценарий: повод и число гостей. Покажем набор блюд с ценами из меню и сумму. Это ориентир, а не счёт: в зале подскажем по порциям.</p></div>
+<div class="party">
+<div><div class="party__occ" id="occ"><button class="obtn is-on" type="button" data-k="date">Свидание или ужин вдвоём<span>2 чел.</span></button><button class="obtn" type="button" data-k="friends">Пятница с друзьями<span>4 чел.</span></button><button class="obtn" type="button" data-k="birthday">День рождения<span>6 чел.</span></button><button class="obtn" type="button" data-k="lunch">Бизнес-ланч<span>1 чел.</span></button><button class="obtn" type="button" data-k="beer">Пиво и закуски<span>2 чел.</span></button><button class="obtn" type="button" data-k="late">Караоке до ночи<span>4 чел.</span></button></div>
+<div class="guest" id="guests">
+<button class="gbtn" type="button" data-n="1">1 гость</button>
+<button class="gbtn is-on" type="button" data-n="2">2 гостя</button>
+<button class="gbtn" type="button" data-n="4">4 гостя</button>
+<button class="gbtn" type="button" data-n="6">6 гостей</button>
+<button class="gbtn" type="button" data-n="8">8 гостей</button>
+</div>
+<p class="hint">Крафтовое пиво: бокал 2 рубля. Кофе с собой и напитки считаются отдельно.</p></div>
+<div class="party__out">
+<p class="party__k" id="pk">СЦЕНАРИЙ · СВИДАНИЕ</p>
+<h3 id="pt">Свидание или ужин вдвоём</h3>
+<p class="lead" id="pd"></p>
+<ul class="olist" id="pl"></ul>
+<div class="totals"><div><b id="psum">0</b><span>руб. всего</span></div><div><b id="ppp">0</b><span>руб. на человека</span></div></div>
+<a class="btn" href="https://wa.me/375293531390" target="_blank" rel="noopener" id="psend">Забронировать стол</a>
+<p class="party__note">Цены по меню доставки от 4 октября. В зале блюда и цены могут отличаться, уточняйте у официанта.</p>
+</div>
+</div>
+</div></section>
+
+</main>
+<footer class="footer"><div class="wrap">
+<div class="footer__top">
+<div class="footer__about"><a class="logo logo--f" href="index.html"><span class="logo__mark">УХ</span><span class="logo__txt"><b>У ХОЛОСТЯКА</b><i>рестобар · Минск</i></span></a>
+<p>Домашняя кухня, крафтовое пиво, караоке и трансляции. Минск, просп. Независимости, 76, метро Академия наук.</p>
+<div class="soc"><a href="https://www.instagram.com/y_holostyaka_restobar/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg></a><a href="https://wa.me/375293531390" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m5.3 14.1c-.2.6-1.2 1.2-1.9 1.2-.5 0-1.1 0-2-.4a11 11 0 0 1-4.4-3.9c-.5-.8-.9-1.7-.9-2.5 0-.7.4-1.4.9-1.8.2-.2.4-.3.6-.3h.5c.2 0 .4 0 .5.4l.7 1.6c0 .2 0 .3-.1.5l-.4.5c-.1.2-.2.3 0 .5a8 8 0 0 0 3.4 2.9c.2.1.4.1.5-.1l.6-.7c.1-.2.3-.2.5-.1l1.6.8c.2.1.3.2.3.4s0 .5-.1.9"/></svg></a><a href="https://t.me/+375293531390" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.8 4.2 2.9 11.4c-.9.3-.9 1.5 0 1.8l4.6 1.5 1.7 5.3c.2.7 1 .9 1.5.3l2.5-2.6 4.6 3.4c.6.4 1.4 0 1.5-.7l2.5-15c.1-.8-.6-1.4-1.5-1.2M9.4 14.3l8.4-5.6-6.8 6.6-.2 3z"/></svg></a></div>
+</div>
+<div><h4>Разделы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="menu.html">Меню</a></li><li><a href="events.html">Поводы</a></li><li><a href="about.html">О баре</a></li><li><a href="gallery.html">Фото</a></li><li><a href="delivery.html">Доставка</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div>
+<div><h4>Меню</h4><ul><li><a href="menu.html#m-goryachie-blyuda">Горячие блюда</a></li><li><a href="menu.html#m-stejki">Стейки</a></li><li><a href="menu.html#m-zakuski">Закуски</a></li><li><a href="menu.html#m-salaty">Салаты</a></li><li><a href="menu.html#m-sety">Сеты</a></li><li><a href="menu.html">Всё меню</a></li></ul></div>
+<div><h4>Связь</h4><ul>
+<li><a href="tel:+375293531390">+375 (29) 353-13-90</a></li>
+<li><a href="tel:+375172949424">+375 (17) 294-94-24</a></li>
+<li><a href="https://yandex.by/maps/org/u_kholostyaka/187212473808/" target="_blank" rel="noopener">Минск, просп. Независимости, 76</a></li>
+<li>Пн–Ср, Вс 11:00–23:00</li>
+<li>Чт–Сб 11:00–01:00</li>
+</ul></div>
+</div>
+<div class="footer__bottom"><span>© <span id="yr">2026</span> РестоБар «У Холостяка»</span>
+<span><a href="politika.html">Политика обработки персональных данных</a></span></div>
+</div></footer>
+<div class="mbar" role="navigation" aria-label="Быстрая связь">
+<a href="tel:+375293531390"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.36 2.3.56 3.5.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.56 3.5a1 1 0 0 1-.25 1z"/></svg>Позвонить</a>
+<a href="https://wa.me/375293531390" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m5.3 14.1c-.2.6-1.2 1.2-1.9 1.2-.5 0-1.1 0-2-.4a11 11 0 0 1-4.4-3.9c-.5-.8-.9-1.7-.9-2.5 0-.7.4-1.4.9-1.8.2-.2.4-.3.6-.3h.5c.2 0 .4 0 .5.4l.7 1.6c0 .2 0 .3-.1.5l-.4.5c-.1.2-.2.3 0 .5a8 8 0 0 0 3.4 2.9c.2.1.4.1.5-.1l.6-.7c.1-.2.3-.2.5-.1l1.6.8c.2.1.3.2.3.4s0 .5-.1.9"/></svg>WhatsApp</a>
+<a href="viber://chat?number=%2B375293531390"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C7 2 3 5.6 3 10c0 2.5 1.3 4.7 3.4 6.1L6 21l4-1.6c.6.1 1.3.2 2 .2 5 0 9-3.6 9-8s-4-8-9-8m3.6 11.3c-.4.9-1.9 1.6-2.7 1.5-2.4-.3-4.6-2.1-5.4-4.4-.3-.8.2-2 1-2.4.3-.2.7 0 .9.3l.7 1.2c.1.3 0 .5-.2.7-.3.2-.2.5.1.9.6.8 1.2 1.2 1.9 1.5.4.2.6 0 .8-.2s.4-.3.7-.2l1.3.6c.3.2.3.6.2.9"/></svg>Viber</a>
+<a href="https://t.me/+375293531390" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.8 4.2 2.9 11.4c-.9.3-.9 1.5 0 1.8l4.6 1.5 1.7 5.3c.2.7 1 .9 1.5.3l2.5-2.6 4.6 3.4c.6.4 1.4 0 1.5-.7l2.5-15c.1-.8-.6-1.4-1.5-1.2M9.4 14.3l8.4-5.6-6.8 6.6-.2 3z"/></svg>Telegram</a>
+</div>
+<script src="assets/js/main.v1.js"></script>
+</body>
+</html>

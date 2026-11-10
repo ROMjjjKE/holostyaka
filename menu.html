@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Меню и цены рестобара «У Холостяка», Минск</title>
+<meta name="description" content="Меню рестобара «У Холостяка»: мачанка, сковородки, стейки, закуски, супы, сеты. Цены в белорусских рублях, вес порций.">
+<meta property="og:title" content="Меню и цены рестобара «У Холостяка», Минск">
+<meta property="og:description" content="Меню рестобара «У Холостяка»: мачанка, сковородки, стейки, закуски, супы, сеты. Цены в белорусских рублях, вес порций.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#17100C">
+<style>
+:root{--wine:#17100C;--wine2:#221812;--wine3:#2E2017;--cream:#F4E9D7;--cream2:#EADCC6;--brass:#DDA04C;--brass2:#F1C67E;
+--wood:#8C5B34;--wood2:#B07A45;--brick:#A5452B;--green:#7E8F62;
+--ink:#15100C;--muted:#7A6459;--line:rgba(221,160,76,.3);
+--pad:24px;--max:1320px;--serif:'Bodoni Moda',Georgia,serif;--body:'Manrope',system-ui,sans-serif;--mono:'DM Mono',ui-monospace,monospace}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--wine);color:var(--cream);font:16px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+h1,h2,h3{margin:0;font-family:var(--serif);font-weight:700;line-height:1.02;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}[hidden]{display:none!important}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.header{position:sticky;top:0;z-index:40;background:rgba(23,16,12,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.header__in{display:flex;align-items:center;gap:20px;padding:12px 0}
+.logo{display:flex;align-items:center;gap:10px}
+.logo__mark{width:38px;height:38px;display:grid;place-items:center;border:1px solid var(--brass);color:var(--brass2);font:700 11px/1 var(--mono);letter-spacing:.08em}
+.logo__txt{display:flex;flex-direction:column;line-height:1.15}
+.logo__txt b{font:700 13px/1 var(--serif);letter-spacing:.16em}
+.logo__txt i{font:400 9px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-style:normal}
+.nav{display:flex;gap:18px;margin-left:auto;font-size:13px;letter-spacing:.01em}
+.nav a{padding:6px 0;border-bottom:1px solid transparent;color:rgba(246,236,220,.78)}
+.nav a:hover,.nav a.is-on{border-color:var(--brass);color:var(--cream)}
+.header__tel{font:400 12.5px/1 var(--mono);color:var(--brass2)}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 21px;font:600 11.5px/1 var(--body);letter-spacing:.13em;text-transform:uppercase;border:1px solid var(--brass);background:var(--brass);color:var(--ink);cursor:pointer;transition:.2s}
+.btn:hover{background:var(--brass2);border-color:var(--brass2)}
+.btn--ghost{background:transparent;color:var(--cream);border-color:rgba(246,236,220,.4)}
+.btn--ghost:hover{background:var(--cream);color:var(--ink);border-color:var(--cream)}
+.burger{display:none;width:42px;height:38px;border:1px solid var(--line);background:transparent;align-items:center;justify-content:center;flex-direction:column;gap:4px;cursor:pointer}
+.burger i{display:block;width:17px;height:1px;background:var(--cream)}
+.burger.is-close i:first-child{transform:rotate(45deg) translateY(3px)}
+.burger.is-close i:last-child{transform:rotate(-45deg) translateY(-3px)}
+.hero{position:relative;min-height:min(96svh,860px);display:flex;align-items:flex-end;overflow:hidden;background:#12060C}
+.hero__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(120% 80% at 68% 0%,rgba(221,160,76,.28),transparent 58%),linear-gradient(180deg,rgba(23,16,12,.62),rgba(23,16,12,.18) 40%,rgba(23,16,12,.86) 76%,var(--wine) 100%)}
+.hero__img{filter:saturate(1.06) contrast(1.02)}
+.hero__in{position:relative;z-index:2;width:100%;padding:clamp(36px,6vw,72px) 0 clamp(20px,3vw,28px)}
+.hero h1{font-size:clamp(2.6rem,7.4vw,6.2rem);line-height:.96}
+.hero h1 em{font-style:italic;color:var(--brass2)}
+.hero__lede{max-width:46ch;margin:18px 0 22px;color:rgba(246,236,220,.86);font-size:clamp(.95rem,1.3vw,1.06rem)}
+.hero__acts{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:clamp(20px,3vw,34px)}
+.hero__facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line)}
+.hero__facts div{padding:14px 14px 0 0}
+.hero__facts b{display:block;font:700 clamp(1rem,1.7vw,1.28rem)/1.15 var(--serif);letter-spacing:.01em;color:var(--cream)}
+.hero__facts span{font:400 9px/1.5 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+.drawer{position:fixed;inset:0;z-index:90;background:rgba(10,4,7,.8);display:none}
+.drawer[data-open]{display:block}
+.drawer__in{position:absolute;inset:0 0 0 auto;width:min(400px,92vw);background:var(--wine2);border-left:1px solid var(--line);padding:22px;overflow-y:auto}
+.drawer__top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.drawer__nav{display:grid;font:700 22px/1 var(--serif)}
+.drawer__nav a{padding:15px 0;border-bottom:1px solid var(--line)}
+.drawer__cta{width:100%;justify-content:center;margin-top:20px}
+.drawer__note{font-size:12.5px;color:rgba(246,236,220,.6);margin-top:12px}
+body.is-locked{overflow:hidden}
+.mbar{display:none}
+@media (max-width:1024px){
+.nav{display:none}.burger{display:flex}.header__tel{display:none}.header__in{gap:10px}
+.hero__facts{grid-template-columns:1fr 1fr}
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.v1.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="header"><div class="header__in wrap">
+<a class="logo" href="index.html"><span class="logo__mark">УХ</span><span class="logo__txt"><b>У ХОЛОСТЯКА</b><i>рестобар · Минск</i></span></a>
+<nav class="nav" aria-label="Основное меню"><a href="index.html">Главная</a><a href="menu.html" class="is-on">Меню</a><a href="events.html">Поводы</a><a href="about.html">О баре</a><a href="gallery.html">Фото</a><a href="delivery.html">Доставка</a><a href="kontakty.html">Контакты</a></nav>
+<a class="header__tel" href="tel:+375293531390">+375 (29) 353-13-90</a>
+<a class="btn btn--brass" href="https://wa.me/375293531390" target="_blank" rel="noopener">Забронировать</a>
+<button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="drawer"><i></i><i></i><i></i></button>
+</div></header>
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Меню" hidden>
+<div class="drawer__in">
+<div class="drawer__top">
+<a class="logo" href="index.html"><span class="logo__mark">УХ</span><span class="logo__txt"><b>У ХОЛОСТЯКА</b><i>рестобар</i></span></a>
+<button class="burger is-close" type="button" data-close aria-label="Закрыть меню"><i></i><i></i></button>
+</div>
+<nav class="drawer__nav"><a href="index.html">Главная</a><a href="menu.html">Меню</a><a href="events.html">Поводы</a><a href="about.html">О баре</a><a href="gallery.html">Фото</a><a href="delivery.html">Доставка</a><a href="kontakty.html">Контакты</a></nav>
+<a class="btn btn--brass drawer__cta" href="tel:+375293531390">Позвонить +375 (29) 353-13-90</a>
+<p class="drawer__note">Минск, просп. Независимости, 76. Каждый день с 11:00, в четверг, пятницу и субботу до 01:00.</p>
+</div></div>
+<main>
+<section class="phero"><img src="assets/img/food1.jpg" alt="Кухня рестобара" width="1024" height="683">
+<div class="phero__in"><div class="wrap"><div class="crumbs"><a href="index.html">Главная</a> / Меню</div>
+<h1>Меню<br><em>и цены</em></h1><p>Девять разделов: сковородки и мачанка, стейки, закуски, супы, сеты. Все цены в белорусских рублях.</p></div></div></section>
+<section class="section section--cream"><div class="wrap">
+<div class="msearch">
+<input type="text" id="mq" placeholder="Поиск по меню: драники, стейк, борщ" aria-label="Поиск по меню">
+<span class="cnt" id="mcnt">показано всё меню</span>
+</div>
+<div class="mfilter" id="mf">
+<button class="mchip is-on" type="button" data-c="all">Всё меню</button>
+<button class="mchip" type="button" data-c="Горячие блюда">Горячие блюда</button><button class="mchip" type="button" data-c="Стейки">Стейки</button><button class="mchip" type="button" data-c="Закуски">Закуски</button><button class="mchip" type="button" data-c="Салаты">Салаты</button><button class="mchip" type="button" data-c="Супы">Супы</button><button class="mchip" type="button" data-c="Горячие закуски">Горячие закуски</button><button class="mchip" type="button" data-c="Сеты">Сеты</button><button class="mchip" type="button" data-c="Гарниры">Гарниры</button><button class="mchip" type="button" data-c="Хлеб">Хлеб</button>
+</div>
+<section class="mgroup" id="m-goryachie-blyuda" data-cat="Горячие блюда"><div class="mgroup__t"><h3>Горячие блюда</h3><span>13 позиций</span></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Жаркое А-ля рататуй</div><p class="mrow__d">Куриное филе с баклажаном, цукини, перцем и шампиньонами в томатном соусе с чесноком</p></div><div class="mrow__r"><b>30</b><i>Br · 450 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Жаркое из курицы с драниками</div><p class="mrow__d">Куриное филе, хрустящие драники, шампиньоны, сметана и маринованный огурец</p></div><div class="mrow__r"><b>30</b><i>Br · 355 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Запечённая говядина с овощами в соусе</div><p class="mrow__d">Ломтики говяжьей вырезки, картофель с луком, шампиньоны и стручковая фасоль</p></div><div class="mrow__r"><b>39</b><i>Br · 300 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Свиные ушки с картофелем по-деревенски</div><p class="mrow__d">Отварные свиные уши под соусом «Коктейль», картофель по-деревенски, сыр</p></div><div class="mrow__r"><b>24</b><i>Br · 420 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Куриные бёдрышки гриль с картофелем фри</div><p class="mrow__d">Бёдра на гриле, картофель фри, соус сальса, черри и маринованный лук</p></div><div class="mrow__r"><b>34</b><i>Br · 400 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Мачанка с блинами фирменная</div><p class="mrow__d">Тонкие блины со свининой и филе птицы, обжаренный лук, шампиньоны, соус</p></div><div class="mrow__r"><b>31</b><i>Br · 450 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Мачанка с драниками</div><p class="mrow__d">Драник, свинина и грудинка, филе птицы, шампиньоны, сметанный соус</p></div><div class="mrow__r"><b>31</b><i>Br · 380 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Овощи гриль</div><p class="mrow__d">Цукини, перец, шампиньоны и черри в маринаде для гриля</p></div><div class="mrow__r"><b>23</b><i>Br · 270 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Поджарка с драниками</div><p class="mrow__d">Свиная шея с грудинкой, шампиньоны, лук, сметана и зелень</p></div><div class="mrow__r"><b>31</b><i>Br · 385 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Семга с брокколи в сливках</div><p class="mrow__d">Сёмга в сливочном соусе, брокколи, черри, сыр и лимон</p></div><div class="mrow__r"><b>39</b><i>Br · 315 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Сковородка «Фермерское угощение»</div><p class="mrow__d">Колбаски, ростбиф из рубленой говядины, яйцо, маринованный лук, картофель</p></div><div class="mrow__r"><b>31</b><i>Br · 460 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Шипящая сковородка со свининой</div><p class="mrow__d">Свиная грудинка и отбивная на гриле, картофельные шарики, яйцо, овощи</p></div><div class="mrow__r"><b>37</b><i>Br · 430 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Язык с картофелем в сметанном соусе</div><p class="mrow__d">Говяжий язык, картофель, лук, шампиньоны, сметана и тёртый сыр</p></div><div class="mrow__r"><b>32</b><i>Br · 360 г</i></div></div></section><section class="mgroup" id="m-stejki" data-cat="Стейки"><div class="mgroup__t"><h3>Стейки</h3><span>3 позиций</span></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Стейк филе-миньон</div><p class="mrow__d">Нежное мясо с прожаренной корочкой, подаём с гарниром на выбор</p></div><div class="mrow__r"><b>51</b><i>Br · 180 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Стейк из свинины в соусе демиглас</div><p class="mrow__d">Свинина на гриле, обжаренный картофель, насыщенный демиглас</p></div><div class="mrow__r"><b>32</b><i>Br · 300 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Куриная грудка гриль с пряными травами</div><p class="mrow__d">Филе в маринаде из пряных трав, сочное внутри и с ароматной корочкой</p></div><div class="mrow__r"><b>25</b><i>Br · 200 г</i></div></div></section><section class="mgroup" id="m-zakuski" data-cat="Закуски"><div class="mgroup__t"><h3>Закуски</h3><span>4 позиций</span></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Закуска «Ах, сальцо»</div><p class="mrow__d">Солёная грудинка, отварной картофель, маринованный лук, горчица и хлеб</p></div><div class="mrow__r"><b>21</b><i>Br · 340 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Карпаччо из говяжьей вырезки</div><p class="mrow__d">Тонкие ломтики вырезки, пармезан, лимонная заправка, черри</p></div><div class="mrow__r"><b>35</b><i>Br · 200 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Соленья по-домашнему</div><p class="mrow__d">Квашеная капуста с морковью, бочковые огурцы, помидоры и лук</p></div><div class="mrow__r"><b>19</b><i>Br · 360 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Закуска овощная</div><p class="mrow__d">Помидоры, огурцы, перец, маслины и оливки, зелень</p></div><div class="mrow__r"><b>20</b><i>Br · 310 г</i></div></div></section><section class="mgroup" id="m-salaty" data-cat="Салаты"><div class="mgroup__t"><h3>Салаты</h3><span>4 позиций</span></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Салат «Гурман»</div><p class="mrow__d">Говяжий язык и рваная говядина, картофель, шампиньоны, маринованный лук</p></div><div class="mrow__r"><b>23</b><i>Br · 210 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Салат «Цезарь» с курицей</div><p class="mrow__d">Курица, салат, помидор, пармезан, гренки и соус цезарь</p></div><div class="mrow__r"><b>24</b><i>Br · 200 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Сельдь в шубе</div><p class="mrow__d">Сельдь с маринованным луком под овощной шубой, майонез</p></div><div class="mrow__r"><b>20</b><i>Br · 380 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Салат «Греческий»</div><p class="mrow__d">Овощи, маслины, фета, маринованный лук и лёгкий соус</p></div><div class="mrow__r"><b>20</b><i>Br · 200 г</i></div></div></section><section class="mgroup" id="m-supy" data-cat="Супы"><div class="mgroup__t"><h3>Супы</h3><span>2 позиций</span></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Борщ традиционный с гренками и грудинкой</div><p class="mrow__d">Мясной борщ с говядиной, солёной грудинкой, сметаной и гренками</p></div><div class="mrow__r"><b>18</b><i>Br · 470 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Бульон куриный с чесночной булочкой</div><p class="mrow__d">Куриное филе, яйцо, зелень и свежая чесночная булочка</p></div><div class="mrow__r"><b>13.5</b><i>Br · 380 г</i></div></div></section><section class="mgroup" id="m-goryachie-zakuski" data-cat="Горячие закуски"><div class="mgroup__t"><h3>Горячие закуски</h3><span>2 позиций</span></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Сырные шарики с датским соусом</div><p class="mrow__d">Сыр в хрустящей корочке с чесноком и паприкой, соус датский</p></div><div class="mrow__r"><b>23</b><i>Br · 200 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Хворост из птицы</div><p class="mrow__d">Куриное филе в корочке из сухарей, обжаренное до золотистого цвета</p></div><div class="mrow__r"><b>28</b><i>Br · 200 г</i></div></div></section><section class="mgroup" id="m-sety" data-cat="Сеты"><div class="mgroup__t"><h3>Сеты</h3><span>1 позиций</span></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Сет «Мини-гриль»</div><p class="mrow__d">Куриная грудка, свиная шея и говяжья вырезка на гриле, соусы барбекю и сальса</p></div><div class="mrow__r"><b>72</b><i>Br · 570 г</i></div></div></section><section class="mgroup" id="m-garniry" data-cat="Гарниры"><div class="mgroup__t"><h3>Гарниры</h3><span>4 позиций</span></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Картофельные драники</div><p class="mrow__d">Четыре золотистых драника со сметаной</p></div><div class="mrow__r"><b>20</b><i>Br · 250 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Картофельные дольки</div><p class="mrow__d">Хрустящие снаружи, мягкие внутри, подаём с соусом</p></div><div class="mrow__r"><b>14</b><i>Br · 150 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Брокколи отварная</div><p class="mrow__d">На пару, с кусочком сливочного масла</p></div><div class="mrow__r"><b>15</b><i>Br · 200 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Картофель фри с кетчупом</div><p class="mrow__d">Из ланч-меню: золотистый картофель с кетчупом</p></div><div class="mrow__r"><b>13</b><i>Br · 180 г</i></div></div></section><section class="mgroup" id="m-hleb" data-cat="Хлеб"><div class="mgroup__t"><h3>Хлеб</h3><span>2 позиций</span></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Французская булочка с чесночной начинкой</div><p class="mrow__d">Мягкая булочка со сливочным маслом и чесноком</p></div><div class="mrow__r"><b>3.5</b><i>Br · 80 г</i></div></div><div class="mrow"><div class="mrow__l"><div class="mrow__n">Хлеб чёрный</div><p class="mrow__d">Подаём к закускам и супам</p></div><div class="mrow__r"><b>0.7</b><i>Br · 60 г</i></div></div></section>
+<p class="mnote">Цены и состав по меню доставки от 4 октября, источник: Яндекс Еда. В зале блюда и цены могут отличаться: уточняйте у официанта. Вес указан для порции.</p>
+<p style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="https://wa.me/375293531390" target="_blank" rel="noopener">Забронировать стол</a><a class="btn btn--ghost" style="color:var(--ink);border-color:rgba(26,14,19,.35)" href="tel:+375293531390">Позвонить</a></p>
+</div></section>
+
+<section class="section section--wine2" id="party"><div class="wrap">
+<div class="sec-head"><div><p class="eyebrow">смета вечера</p><h2 class="h2">Сколько стоит<br><em>посидеть</em></h2></div>
+<p>Соберите сценарий: повод и число гостей. Покажем набор блюд с ценами из меню и сумму. Это ориентир, а не счёт: в зале подскажем по порциям.</p></div>
+<div class="party">
+<div><div class="party__occ" id="occ"><button class="obtn is-on" type="button" data-k="date">Свидание или ужин вдвоём<span>2 чел.</span></button><button class="obtn" type="button" data-k="friends">Пятница с друзьями<span>4 чел.</span></button><button class="obtn" type="button" data-k="birthday">День рождения<span>6 чел.</span></button><button class="obtn" type="button" data-k="lunch">Бизнес-ланч<span>1 чел.</span></button><button class="obtn" type="button" data-k="beer">Пиво и закуски<span>2 чел.</span></button><button class="obtn" type="button" data-k="late">Караоке до ночи<span>4 чел.</span></button></div>
+<div class="guest" id="guests">
+<button class="gbtn" type="button" data-n="1">1 гость</button>
+<button class="gbtn is-on" type="button" data-n="2">2 гостя</button>
+<button class="gbtn" type="button" data-n="4">4 гостя</button>
+<button class="gbtn" type="button" data-n="6">6 гостей</button>
+<button class="gbtn" type="button" data-n="8">8 гостей</button>
+</div>
+<p class="hint">Крафтовое пиво: бокал 2 рубля. Кофе с собой и напитки считаются отдельно.</p></div>
+<div class="party__out">
+<p class="party__k" id="pk">СЦЕНАРИЙ · СВИДАНИЕ</p>
+<h3 id="pt">Свидание или ужин вдвоём</h3>
+<p class="lead" id="pd"></p>
+<ul class="olist" id="pl"></ul>
+<div class="totals"><div><b id="psum">0</b><span>руб. всего</span></div><div><b id="ppp">0</b><span>руб. на человека</span></div></div>
+<a class="btn" href="https://wa.me/375293531390" target="_blank" rel="noopener" id="psend">Забронировать стол</a>
+<p class="party__note">Цены по меню доставки от 4 октября. В зале блюда и цены могут отличаться, уточняйте у официанта.</p>
+</div>
+</div>
+</div></section>
+
+<section class="cta"><div class="wrap cta__in"><div><h2>Не выбрали?<br><em>Поможем</em></h2><p>Скажите, сколько вас и что любите: предложим набор без лишнего.</p></div>
+<div class="cta__acts"><a class="btn" href="tel:+375293531390">Позвонить</a><a class="btn btn--ghost" href="https://wa.me/375293531390" target="_blank" rel="noopener">WhatsApp</a></div></div></section>
+</main>
+<footer class="footer"><div class="wrap">
+<div class="footer__top">
+<div class="footer__about"><a class="logo logo--f" href="index.html"><span class="logo__mark">УХ</span><span class="logo__txt"><b>У ХОЛОСТЯКА</b><i>рестобар · Минск</i></span></a>
+<p>Домашняя кухня, крафтовое пиво, караоке и трансляции. Минск, просп. Независимости, 76, метро Академия наук.</p>
+<div class="soc"><a href="https://www.instagram.com/y_holostyaka_restobar/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg></a><a href="https://wa.me/375293531390" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m5.3 14.1c-.2.6-1.2 1.2-1.9 1.2-.5 0-1.1 0-2-.4a11 11 0 0 1-4.4-3.9c-.5-.8-.9-1.7-.9-2.5 0-.7.4-1.4.9-1.8.2-.2.4-.3.6-.3h.5c.2 0 .4 0 .5.4l.7 1.6c0 .2 0 .3-.1.5l-.4.5c-.1.2-.2.3 0 .5a8 8 0 0 0 3.4 2.9c.2.1.4.1.5-.1l.6-.7c.1-.2.3-.2.5-.1l1.6.8c.2.1.3.2.3.4s0 .5-.1.9"/></svg></a><a href="https://t.me/+375293531390" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.8 4.2 2.9 11.4c-.9.3-.9 1.5 0 1.8l4.6 1.5 1.7 5.3c.2.7 1 .9 1.5.3l2.5-2.6 4.6 3.4c.6.4 1.4 0 1.5-.7l2.5-15c.1-.8-.6-1.4-1.5-1.2M9.4 14.3l8.4-5.6-6.8 6.6-.2 3z"/></svg></a></div>
+</div>
+<div><h4>Разделы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="menu.html">Меню</a></li><li><a href="events.html">Поводы</a></li><li><a href="about.html">О баре</a></li><li><a href="gallery.html">Фото</a></li><li><a href="delivery.html">Доставка</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div>
+<div><h4>Меню</h4><ul><li><a href="menu.html#m-goryachie-blyuda">Горячие блюда</a></li><li><a href="menu.html#m-stejki">Стейки</a></li><li><a href="menu.html#m-zakuski">Закуски</a></li><li><a href="menu.html#m-salaty">Салаты</a></li><li><a href="menu.html#m-sety">Сеты</a></li><li><a href="menu.html">Всё меню</a></li></ul></div>
+<div><h4>Связь</h4><ul>
+<li><a href="tel:+375293531390">+375 (29) 353-13-90</a></li>
+<li><a href="tel:+375172949424">+375 (17) 294-94-24</a></li>
+<li><a href="https://yandex.by/maps/org/u_kholostyaka/187212473808/" target="_blank" rel="noopener">Минск, просп. Независимости, 76</a></li>
+<li>Пн–Ср, Вс 11:00–23:00</li>
+<li>Чт–Сб 11:00–01:00</li>
+</ul></div>
+</div>
+<div class="footer__bottom"><span>© <span id="yr">2026</span> РестоБар «У Холостяка»</span>
+<span><a href="politika.html">Политика обработки персональных данных</a></span></div>
+</div></footer>
+<div class="mbar" role="navigation" aria-label="Быстрая связь">
+<a href="tel:+375293531390"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.36 2.3.56 3.5.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.56 3.5a1 1 0 0 1-.25 1z"/></svg>Позвонить</a>
+<a href="https://wa.me/375293531390" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m5.3 14.1c-.2.6-1.2 1.2-1.9 1.2-.5 0-1.1 0-2-.4a11 11 0 0 1-4.4-3.9c-.5-.8-.9-1.7-.9-2.5 0-.7.4-1.4.9-1.8.2-.2.4-.3.6-.3h.5c.2 0 .4 0 .5.4l.7 1.6c0 .2 0 .3-.1.5l-.4.5c-.1.2-.2.3 0 .5a8 8 0 0 0 3.4 2.9c.2.1.4.1.5-.1l.6-.7c.1-.2.3-.2.5-.1l1.6.8c.2.1.3.2.3.4s0 .5-.1.9"/></svg>WhatsApp</a>
+<a href="viber://chat?number=%2B375293531390"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C7 2 3 5.6 3 10c0 2.5 1.3 4.7 3.4 6.1L6 21l4-1.6c.6.1 1.3.2 2 .2 5 0 9-3.6 9-8s-4-8-9-8m3.6 11.3c-.4.9-1.9 1.6-2.7 1.5-2.4-.3-4.6-2.1-5.4-4.4-.3-.8.2-2 1-2.4.3-.2.7 0 .9.3l.7 1.2c.1.3 0 .5-.2.7-.3.2-.2.5.1.9.6.8 1.2 1.2 1.9 1.5.4.2.6 0 .8-.2s.4-.3.7-.2l1.3.6c.3.2.3.6.2.9"/></svg>Viber</a>
+<a href="https://t.me/+375293531390" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.8 4.2 2.9 11.4c-.9.3-.9 1.5 0 1.8l4.6 1.5 1.7 5.3c.2.7 1 .9 1.5.3l2.5-2.6 4.6 3.4c.6.4 1.4 0 1.5-.7l2.5-15c.1-.8-.6-1.4-1.5-1.2M9.4 14.3l8.4-5.6-6.8 6.6-.2 3z"/></svg>Telegram</a>
+</div>
+<script src="assets/js/main.v1.js"></script>
+</body>
+</html>
